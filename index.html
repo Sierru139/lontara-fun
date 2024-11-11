@@ -5,25 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="logo.png">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./script.js"></script>
+    <script src="./trans-bugis.js"></script>
     <title>ᨒᨚᨈᨑ</title>
 </head>
-<body class="bg-black text-white">
+
+<body class="bg-gray-900">
     <div class="w-full  bg-[url(./bg-batik-pattern-removebg.png)] bg-repeat-x bg-[center_top_-100px]">
         <div class="container mx-auto h-[85vh] flex flex-col items-center justify-center text-center lg:px-0 px-8">
-            <div class="mb-6">
+            <div class="mb-6 text-white">
                 <h1 class="text-4xl font-semibold">ᨅᨔ ᨕᨘᨁᨗ</h1>
-                <p class="text-sm opacity-75">ᨉᨑᨗ : ᨐᨔᨗᨑᨙ<span class="text-xs">(Yasir)</span></p>
+                <p class="text-sm">ᨉᨑᨗ : ᨐᨔᨗᨑᨙ <span class="text-xs">Yasir (only styling)</span> | ᨄᨘᨂ ᨙᨔᨗ ᨕᨚᨒᨛ : <a class="text-blue-300 underline" href="https://github.com/bennylin">bennylin</a></p>
+                <p class="text-sm">"Transliterasi Aksara Bugis" adalah sebuah alat sederhana untuk mengetik aksara Bugis dengan keyboard biasa (QWERTY). Cukup ketikkan kata yang Anda inginkan, dan aksara Bugisnya akan langsung muncul.</p>
+                <p class="text-sm">Catatan: "e" menghasilkan taling, "x" menghasilkan pepet.</p>
             </div>
 
-            <div class="mb-8">
-                <input class="border lg:w-80 p-2 text-center text-black" type="text" id="ᨆᨔᨘᨀᨙ" placeholder="ᨆᨔᨘᨀᨂᨙ ᨔᨙᨔᨘᨕᨈᨘ">
-                <button class="block rounded-b-lg bg-slate-500 w-full hover:opacity-75 hover:shadow-none duration-500 shadow-md" onclick="ᨆᨔᨘᨀᨂ()">ᨄᨘᨑᨊᨗ</button>
+            <div class="flex items-center justify-center w-[80vw] gap-x-4">
+              <div class="flex-[0_0_50%]">
+                  <textarea class="border w-full rounded-md p-2" rows="10" id="inp_txt"></textarea>
+                  <!-- <button class="block rounded-b-lg bg-slate-500 w-full hover:opacity-75 hover:shadow-none duration-500 shadow-md" onclick="ᨆᨔᨘᨀᨂ()">ᨄᨘᨑᨊᨗ</button> -->
+              </div>
+              
+              <div class="p-2 border-2 rounded-md h-full flex-[0_0_50%] text-start">
+                <h1 class="text-2xl text-white" id="prev_label"></h1>
+              </div>
             </div>
-            
-            <h1 class="text-5xl font-semibold p-4 border-2 rounded-md" id="ᨖᨔᨗᨒᨙ">ᨖᨔᨗᨒᨙᨊ</h1>
         </div>
     </div>
-    <footer class="w-full h-24 flex items-center justify-center h-[15vh] bg-[url(./bg-batik-pattern-removebgrtt.png)] bg-repeat-x">
+    <footer class="w-full h-24 flex items-center justify-center bg-[url(./bg-batik-pattern-removebgrtt.png)] bg-repeat-x">
         <h3 class="text-sm opacity-40">BY YASIR</h3>
     </footer>
     
